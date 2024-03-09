@@ -34,7 +34,7 @@ public class Vehicle {
     @Column(name = "plate_number", unique = true)
     @NotNull(message = "Plate number cannot be null")
     @NotBlank(message = "Plate number cannot be blank")
-    @Size(min = 6, max = 8, message = "Plate number must be between 2 and 8 characters")
+    @Size(min = 6, max = 8, message = "Plate number must be between 6 and 8 characters")
     private String plateNumber;
 
     @Column(name="type", insertable = false, updatable = false)
